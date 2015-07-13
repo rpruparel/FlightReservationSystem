@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/FlightReservation">
+    
+    <Resource name="jdbc/flightreservation" auth="Container"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://127.5.11.2:3306/air_ticket_reservation?autoReconnect=true"
+    username="admin7ZkvFuU" password="91cFYVsYizrw"
+    maxActive="100" maxIdle="30" maxWait="10000"
+    logAbandoned="true" removeAbandoned="true"
+    removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+    
+</Context>

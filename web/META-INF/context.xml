@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/FlightReservation">
+    
+	<!--	<openshift server ip address> : replace with openshift server ip address
+			<port number>				  : replace with openshift port number
+			<openshift mysql username>    : replace with openshift mysql username
+			<openshift mysql password>    : replace with openshift mysql password
+			<database name> 			  : replace with name of database used			-->
+    
+	<Resource name="jdbc/flightreservation" auth="Container"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://<openshift server ip address>:<port number>/<database name>?autoReconnect=true"
+    username="<openshift mysql username>" password="<openshift mysql password>"
+    maxActive="100" maxIdle="30" maxWait="10000"
+    logAbandoned="true" removeAbandoned="true"
+    removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+    
+</Context>
